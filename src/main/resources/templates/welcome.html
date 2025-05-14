@@ -3,27 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenkins CI/CD Project by Avinash Reddy</title>
+    <title>Jenkins CI/CD on AWS | Avinash Reddy</title>
 
-    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.2.1/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/css/main.css}">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- Optional favicon -->
+    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
 
     <style>
         body {
             background-color: #f8f9fa;
         }
+
         .starter-template {
             padding: 3rem 1.5rem;
             text-align: center;
         }
-        .branding {
+
+        .section {
             margin-top: 2rem;
         }
+
         footer {
+            margin-top: 3rem;
             text-align: center;
-            padding: 1rem 0;
+            font-size: 0.9rem;
             color: #6c757d;
+        }
+
+        ul {
+            list-style: square;
+            padding-left: 1.5rem;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        .badges img {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -32,22 +51,51 @@
 
 <main role="main" class="container">
     <div class="starter-template">
-        <img src="/images/jenkins-logo.png" alt="Jenkins Logo" style="height: 80px;" class="mb-3"> <!-- Optional logo -->
-        <h1 class="display-4">Jenkins CI/CD Project</h1>
-        <p class="lead">Powered by AWS | Brought to you by <strong>Avinash Reddy</strong></p>
+        <h1 class="display-4">Jenkins CI/CD on AWS</h1>
+        <p class="lead">Welcome to the automated deployment project by <strong>Avinash Reddy</strong></p>
         <h2><span th:text="'Hello, ' + ${message}"></span></h2>
+
+        <div class="badges mt-4">
+            <!-- Replace with your actual repo name if needed -->
+            <img src="https://github.com/avizway1/your-repo-name/actions/workflows/main.yml/badge.svg" alt="Build Status">
+            <img src="https://img.shields.io/github/last-commit/avizway1/your-repo-name" alt="Last Commit">
+            <img src="https://img.shields.io/github/stars/avizway1/your-repo-name?style=social" alt="GitHub Stars">
+        </div>
     </div>
 
-    <div class="branding text-center">
-        <img src="/images/aws-logo.png" alt="AWS Logo" style="height: 60px;" class="mr-2">
-        <img src="/images/jenkins-logo.png" alt="Jenkins Logo" style="height: 60px;">
-    </div>
+    <section class="section">
+        <h3>About Me</h3>
+        <p>
+            I'm Avinash Reddy, a DevOps engineer passionate about automating software delivery with modern tools like Jenkins, AWS, Docker, and Kubernetes.
+            I specialize in building reliable CI/CD pipelines and streamlining cloud-native deployments.
+        </p>
+    </section>
+
+    <section class="section">
+        <h3>Key Achievements</h3>
+        <ul>
+            <li>Docker Captain – Recognized by Docker for community contributions and technical expertise.</li>
+            <li>Built production-grade CI/CD pipelines using Jenkins, GitHub, and AWS CodeDeploy.</li>
+            <li>Automated EKS-based deployments with Jenkins and Helm for microservices architecture.</li>
+            <li>Successfully migrated monolithic apps to containerized infrastructure using Docker & ECS.</li>
+            <li>Speaker and content creator for DevOps tutorials and workshops on YouTube.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h3>Contact Me</h3>
+        <p>📞 Mobile: <strong>+91-7997777597</strong></p>
+        <div class="social-links">
+            <a href="https://github.com/avizway1" target="_blank">🔗 GitHub</a>
+            <a href="https://www.linkedin.com/in/avizway1" target="_blank">🔗 LinkedIn</a>
+        </div>
+    </section>
 </main>
 
 <footer>
     <p>&copy; <span th:text="${#dates.format(new java.util.Date(), 'yyyy')}"></span> Avinash Reddy | Jenkins on AWS</p>
 </footer>
 
-<script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
 </body>
 </html>
