@@ -1,57 +1,80 @@
-/* Base Layout */
+/* General body padding */
 body {
   padding-top: 5rem;
   background-color: #f8f9fa;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #343a40;
 }
 
-/* Centered welcome message */
+/* Centered main welcome area */
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
 }
 
-/* Headings */
+/* Section headings */
 h1 {
-  color: #004085; /* Deep blue for clarity */
-  font-weight: bold;
+  color: #004085;
+  font-weight: 700;
 }
 
 h2 {
-  color: #d9534f; /* Bootstrap 'danger' red */
+  color: #d63384;
+  margin-top: 1rem;
+  font-weight: 600;
 }
 
-/* Paragraph text */
-p.lead {
+h3 {
   color: #343a40;
-  font-size: 1.25rem;
-}
-
-/* Branding logos */
-.branding img {
-  margin: 0.5rem;
-  max-height: 60px;
-}
-
-/* Footer */
-footer {
   margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* List items in achievements */
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Contact and social links */
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  margin-right: 15px;
+  font-weight: 500;
+  color: #007bff;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Build badge styling */
+.badges img {
+  margin: 0.5rem;
+  vertical-align: middle;
+  height: 24px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 3rem;
+  padding: 1rem 0;
   text-align: center;
   font-size: 0.9rem;
   color: #6c757d;
-}
-
-/* Responsive tweaks */
-@media (max-width: 576px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .branding img {
-    max-height: 40px;
-  }
+  border-top: 1px solid #dee2e6;
 }
